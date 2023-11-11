@@ -9,7 +9,7 @@ public class SolutionController : ControllerBase
     [HttpGet("CountingValleys({path})")]
     public ActionResult<CountResponse> Get(string path)
     {
-        return Ok(new CountResponse{Path = path, Valleys = path.Length+1});
+        return Ok(new CountResponse{Path = path, Valleys = path.Length});
     }
 }
 
