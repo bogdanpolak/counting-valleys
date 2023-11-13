@@ -1,0 +1,31 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@5.0
+
+workflows:
+  build-and-unittest:
+    jobs:
+      - build-and-test
+jobs:
+  build-and-test:
+    executor:
+      name: win/default
+      version: edge
+    steps:
+      - checkout
+      - run:
+          name: Restore project dependencies and tools
+          command: dotnet restore ./api
+      - run:
+          name: Build project 
+          command: dotnet build ./api
+      - run:
+          name: "Running tests"
+          command: |
+            mkdir test-results
+            dotnet test ./tests --logger:"junit;LogFilePath=test-results/dotnet-counting-valleys/xunit.xml"
+      - store_test_results:
+          path: ./tests/test-results
+      - store_artifacts:
+          path: ./tests/test-results
