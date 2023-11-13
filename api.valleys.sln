@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{A710CC9D-E4D5-4027-8D60-DC445D62ED38}") = "API.CountingValleys", "api\api.counting.valleys.csproj", "{E34D931A-BA13-4979-B4C7-CA3EB10EEC74}"
+EndProject
+Project("{A710CC9D-E4D5-4027-8D60-DC445D62ED38}") = "Tests.CountingValleys", "tests\UnitTests.csproj", "{1F5CEC60-3600-4527-9B3A-9373A2EBB43D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E34D931A-BA13-4979-B4C7-CA3EB10EEC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34D931A-BA13-4979-B4C7-CA3EB10EEC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34D931A-BA13-4979-B4C7-CA3EB10EEC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34D931A-BA13-4979-B4C7-CA3EB10EEC74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5CEC60-3600-4527-9B3A-9373A2EBB43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5CEC60-3600-4527-9B3A-9373A2EBB43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5CEC60-3600-4527-9B3A-9373A2EBB43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5CEC60-3600-4527-9B3A-9373A2EBB43D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
